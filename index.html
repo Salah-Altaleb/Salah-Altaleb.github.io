@@ -1,17 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>My Site!</title>
-        <style>
-            h1 {
-                color: rgb(16, 115, 220);
-            }
-        </style>
-    </head>
+{% extends "layout.html" %}
 
-    <body>
-        <h1>My First Github Pages Website!</h1>
-        <p>My first paragraph.</p>
-    </body>
-</html>
+{% block title %}
+    Google Search
+{% endblock %}
+
+
+{% block main %}
+
+    <form action="https://www.google.com/search">
+
+        <input type="text" name="q">
+
+        <div class="button-container">
+            <input type="submit" value="Google Search">
+            <input type="submit" name="btnI" value="I'm Feeling Lucky">
+        </div>
+
+    </form>
+
+    <div class="top-right-container">
+        <a href="{{ url_for('static', filename='image.html') }}" class="button">Go to Image Search</a>
+        <a href="{{ url_for('static', filename='advanced.html') }}" class="button">Go to Advanced Search</a>
+    </div>
+
+{% endblock %}
+

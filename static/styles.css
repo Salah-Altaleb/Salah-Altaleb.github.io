@@ -1,0 +1,64 @@
+.top-right-container {
+    position: absolute; /* Positions the whole group of buttons */
+    top: 0; /* Aligns the group to the top */
+    right: 0; /* Aligns the group to the right */
+    margin: 10px; /* Adds space from the edges */
+    display: flex; /* Aligns children horizontally */
+    gap: 10px; /* Adds space between the buttons */
+}
+
+.button {
+    background-color: #8ab4f8; /* Button background */
+    padding: 10px; /* Adds padding inside the button */
+    text-decoration: none; /* Removes underline from links */
+    color: black; /* Button text color */
+    border-radius: 5px; /* Rounds the corners */
+}
+
+.button:hover {
+    background-color: deepskyblue; /* Changes color on hover */
+    color: white; /* Text color on hover */
+}
+
+body {
+    display: flex; /* Enables flexbox */
+    flex-direction: column;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 100vh; /* Makes the body full height of the viewport */
+    margin: 0; /* Removes default margin */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px; /* Limit the width of the form */
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 28px; /* Rounded corners */
+    margin-bottom: 10px; /* Space below the search bar */
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    padding: 8px 15px; /* Decrease the padding */
+    font-size: 14px; /* Reduce the font size */
+    border: none;
+    border-radius: 5px; /* Adjust the border-radius if needed */
+    background-color: #8ab4f8; /* Google blue */
+    color: white;
+    cursor: pointer;
+    margin: 5px;
+    width: auto; /* Change width to auto to shrink it to fit the content */
+    min-width: 100px; /* Optional: Set a minimum width to maintain a consistent look */
+}
+
+input[type="submit"]:hover {
+    background-color: #357ae8; /* Darker blue */
+}

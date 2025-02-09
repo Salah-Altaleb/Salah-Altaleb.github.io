@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Image Search
+{% endblock %}
+
+
+{% block main %}
+
+    <form action="https://www.google.com/search">
+
+        <input type="text" name="q">
+        <input type="hidden" name="tbm" value="isch">
+        <input type="submit" value="Google Image Search">
+
+    </form>
+
+    <div class="top-right-container">
+
+        <a href="{{ url_for('static', filename='index.html')) }}" class="button">Go to Google Search</a>
+
+    </div>
+
+{% endblock %}
